@@ -1,0 +1,5 @@
+backend/node_modules/
+
+./frontend/ayurveda/node_modules
+
+model/.venv/

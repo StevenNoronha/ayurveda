@@ -1,0 +1,76 @@
+@media only screen and (max-width: 420px){
+    /* Utility classes */
+    h1 {
+        font-size: 3rem;
+    }
+    /* Navbar classess */
+    .navbar h1 {
+        font-size: 2rem;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .tog-on {
+        top: 10vh;
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        gap: .5rem;
+        left: 0px;
+        transition: left .5s;
+        border-radius: 15px;
+        z-index: 2;
+    }
+
+    .tog-off {
+        left: -400px;
+    }
+
+    /* hero section */
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1rem;
+        height: 110vh;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-text {
+        width: 85vw;
+    }
+
+    #logo {
+        width: 85vw;
+    }
+
+    /* Info.js */
+    .dosha-logo {
+        width: 15rem;
+    }
+
+    .info-card-con {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 85vw;
+        height: 80vh;
+        border-radius: 25px;
+
+    }
+    /* question.js */
+    .background {
+        background-image: url("./assests/mobBG.jpg");
+        background-size: cover;
+        background-position:top;
+    }
+
+}
