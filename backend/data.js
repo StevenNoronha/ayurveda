@@ -1,36 +1,36 @@
 const doshaData = [
     {
         "question_no": "1",
-        "question": "bodyHair_Color",
+        "question": " What is your Body Hair Color ? ",
         "options": [
             { "1": "Black" },
-            { "2": "DarkBrown" },
-            { "3": "LightBrown" },
+            { "2": "Dark Brown" },
+            { "3": "Light Brown" },
             { "4": "Dusky" } 
         ]
     },
     {
         "question_no": "2",
-        "question": "eye_Color",
+        "question": " What is your Eye Color ? ",
         "options": [
             { "1": "Black" },
-            { "2": "DarkBrown" },
-            { "3": "LightBrown" },
+            { "2": "Dark Brown" },
+            { "3": "Light Brown" },
             { "4": "Grayish"}
         ]
     },
     {
         "question_no": "3",
-        "question": "eye_Size",
+        "question": " What is your Eye Size ? ",
         "options": [
-            { "1": "ModeratelyDeveloped" },
-            { "2": "WeaklyDeveloped" },
-            { "3": "WellDeveloped" }
+            { "1": "Moderately Developed" },
+            { "2": "Weakly Developed" },
+            { "3": "Well Developed" }
         ]
     },
     {
         "question_no": "4",
-        "question": "hair_Growth",
+        "question": " What is your Hair Growth ? ",
         "options": [
             { "1": "Moderate" },
             { "2": "Scanty" },
@@ -40,7 +40,7 @@ const doshaData = [
     },
     {
         "question_no": "5",
-        "question": "hair_Type",
+        "question": " What is your Hair Type ? ",
         "options": [
             { "1": "Thin" },
             { "2": "Thick" }
@@ -48,41 +48,41 @@ const doshaData = [
     },
     {
         "question_no": "6",
-        "question": "nails_color",
+        "question": " What is your Nail Type ? ",
         "options": [
             { "1": "Pink" },
             { "2": "Reddish" },
-            { "3": "PaleYellow" }
+            { "3": "Pale Yellow" }
         ]
     },
     {
         "question_no": "7",
-        "question": "palms_Color",
+        "question": " What  is your Palm Color ? ",
         "options": [
             { "1": "Pink" },
             { "2": "Reddish" },
-            { "3": "PaleYellow" },
+            { "3": "Pale Yellow" },
             { "4": "Dark" }
         ]
     },
     {
         "question_no": "8",
-        "question": "scalpHair_Color",
+        "question": " What is your Scalp Hair Color ? ",
         "options": [
             { "1": "Black" },
-            { "2": "DarkBrown" },
-            { "3": "LightBrown" },
+            { "2": "Dark Brown" },
+            { "3": "Light Brown" },
             { "4": "Dusky" },
             { "5": "NA" }
         ]
     },
     {
         "question_no": "9",
-        "question": "skin_Color",
+        "question": " What  is your Skin Color ? ",
         "options": [
-            { "1": "FairPink" },
-            { "2": "FairReddish" },
-            { "3": "FairPaleYellow" },
+            { "1": "Fair Pink" },
+            { "2": "Fair Reddish" },
+            { "3": "Fair Pale Yellow" },
             { "4": "Dark" },
             { "5": "Wheatish" },
             { "6": "NA" }
@@ -90,7 +90,7 @@ const doshaData = [
     },
     {
         "question_no": "10",
-        "question": "skin_Nature",
+        "question": " What is your Skin Nature ? ",
         "options": [
             { "1": "Dry" },
             { "2": "Oily" },
@@ -100,16 +100,16 @@ const doshaData = [
     },
     {
         "question_no": "11",
-        "question": "teeth_Color",
+        "question": " What is your Teeth Color ? ",
         "options": [
-            { "1": "MilkyWhite" },
+            { "1": "Milky White" },
             { "2": "Yellowish" },
             { "3": "Dull/Blackish" }
         ]
     },
     {
         "question_no": "12",
-        "question": "appetite_Amount",
+        "question": " What is your Appetite Amount? ",
         "options": [
             { "1": "Low" },
             { "2": "Medium" },
@@ -119,7 +119,7 @@ const doshaData = [
     },
     {
         "question_no": "13",
-        "question": "bowel_Freq",
+        "question": " What is your Bowl Frequency ? ",
         "options": [
             { "1": "Regular" },
             { "2": "Irregular" },
@@ -128,17 +128,17 @@ const doshaData = [
     },
     {
         "question_no": "14",
-        "question": "bowel_Tendency",
+        "question": " What is your Bowl Tendency ? ",
         "options": [
             { "1": "None" },
             { "2": "Constipation" },
-            { "3": "LooseMotion" },
+            { "3": "Loose Motion" },
             { "4": "NA" }
         ]
     },
     {
         "question_no": "15",
-        "question": "digestive_Amount",
+        "question": " What is your Digestive Amount ? ",
         "options": [
             { "1": "Low" },
             { "2": "Medium" },
@@ -148,7 +148,7 @@ const doshaData = [
     },
     {
         "question_no": "16",
-        "question": "sleep_Amount",
+        "question": " What is your Sleep Amount ? ",
         "options": [
             { "1": "Low" },
             { "2": "Medium" },
@@ -157,7 +157,7 @@ const doshaData = [
     },
     {
         "question_no": "17",
-        "question": "sleep_Quality",
+        "question": " What is your Sleep Quality ? ",
         "options": [
             { "1": "Sound" },
             { "2": "Deep" },
@@ -167,7 +167,7 @@ const doshaData = [
     },
     {
         "question_no": "18",
-        "question": "stool_Consistency",
+        "question": " What is your Stool Consistency ? ",
         "options": [
             { "1": "Hard" },
             { "2": "Medium" },
@@ -177,7 +177,7 @@ const doshaData = [
     },
     {
         "question_no": "19",
-        "question": "walking_Amount",
+        "question": " What is your Walking Amount ? ",
         "options": [
             { "1": "Moderate" },
             { "2": "Less" },
@@ -187,7 +187,7 @@ const doshaData = [
     },
     {
         "question_no": "20",
-        "question": "Anger_Quality",
+        "question": " What is your Anger Quality ? ",
         "options": [
             { "1": "Good" },
             { "2": "Medium" },
@@ -197,7 +197,7 @@ const doshaData = [
     },
     {
         "question_no": "21",
-        "question": "makingFriends_speed",
+        "question": " What is your Friends Making Speed ? ",
         "options": [
             { "1": "Moderately" },
             { "2": "Quickly" },
@@ -207,7 +207,7 @@ const doshaData = [
     },
     {
         "question_no": "22",
-        "question": "retainingFriends_quality",
+        "question": " What is your Retaining Friends Quality ? ",
         "options": [
             { "1": "Low" },
             { "2": "Moderate" },
@@ -218,24 +218,24 @@ const doshaData = [
     },
     {
         "question_no": "23",
-        "question": "hair_feel",
+        "question": " How does your Hair Feel ? ",
         "options": [
             { "1": "Coarse" },
-            { "2": "Non_Coarse" },
+            { "2": "Non-Coarse" },
             { "3": "Smooth" }
         ]
     },
     {
         "question_no": "24",
-        "question": "skin_cracked",
+        "question": " Do you have cracked skin ? ",
         "options": [
-            { "1": "Non_Cracked" },
+            { "1": "Non-Cracked" },
             { "2": "Cracked" }
         ]
     },
     {
         "question_no": "25",
-        "question": "skin_freckle",
+        "question": " Does your skin freckle? ",
         "options": [
             { "1": "Non-Freckles" },
             { "2": "Freckles" }
@@ -243,25 +243,25 @@ const doshaData = [
     },
     {
         "question_no": "26",
-        "question": "skin_mark",
+        "question": " Do you have any skin marks? ",
         "options": [
-            { "1": "Non_Mark" },
+            { "1": "Non-Mark" },
             { "2": "Mark" }
         ]
     },
     {
         "question_no": "27",
-        "question": "skin_pimple",
+        "question": " Do you have pimples? ",
         "options": [
-            { "1": "Non_Pimples" },
+            { "1": "Non-Pimples" },
             { "2": "Pimples" }
         ]
     },
     {
         "question_no": "28",
-        "question": "skin_wrinkled",
+        "question": " Do you have wrinkled skin? ",
         "options": [
-            { "1": "Non_wrinkled" },
+            { "1": "Non-wrinkled" },
             { "2": "Wrinkled" }
         ]
     }

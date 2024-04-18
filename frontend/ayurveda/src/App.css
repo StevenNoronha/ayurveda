@@ -14,13 +14,25 @@ a {
 }
 
 button {
-    margin: 15px;
-    padding: 15px 25px;
-    border-radius: 8px;
-    border: 1px solid white;
-    background-color: #a3b18a;
-    color: rgba(237, 26, 26, 0.523);
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #61df5cac; /* Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+button:hover {
+    background-color: #45a049; /* Darker green */
 }
+  
 
 hr {
     height: .1px;
@@ -44,7 +56,6 @@ hr {
     background-color: #588157;
     padding: 2px;
     border-radius: 4px;
-    box-shadow: 0 12px 4px rgba(0, 0, 0, 0.694);
 }
 
 .navContainer {
@@ -70,7 +81,12 @@ hr {
     width: 55vw;
     font-size: 1.7rem;
     font-family: 'SAMAN';
-    color: #dad7cd;
+    color: wheat;
+}
+
+.hero-text h1 {
+  color: #dad7cd;
+  font-size: 4rem;
 }
 
 .example {
@@ -117,6 +133,9 @@ hr {
     border-radius: 25px;
 }
 
+.questions h1 {
+    text-align: center;
+}
 .qcard {
     background-color: #dad7cd;
     width: 50vw;
@@ -190,16 +209,239 @@ hr {
     background-color: rgba(255, 255, 255, 0.719);
     height: 85vh;
     border-radius: 25px;
-    box-shadow: 8px 8px 5px rgba(173, 216, 230, 0.573);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 5px rgba(173, 216, 230, 0.573);   
 }
 
 .info-card p {
     margin: 25px;
     text-indent: 50px;
+    text-align: justify;
 }
+
+/* Login.js */
+.login input {
+    padding: .5rem;
+    border-radius: 15px;
+    margin: 0px;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 3px 3px 5px rgba(2, 35, 45, 0.858);
+    transition: all 0.3s ease; 
+}
+
+.login input:hover {
+    border-color: rgba(0, 0, 0, 0.9); 
+    box-shadow: 5px 5px 10px rgba(2, 35, 45, 0.858); 
+}
+
+.login {
+    padding: 2rem;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.756);
+    border-radius: 15px;
+    z-index: 1;
+    gap: 1rem;
+}
+
+.label {
+    width: 70%;
+    text-align: left;
+}
+
+.select-container {
+    position: relative;
+    width: 20vw;
+    height: 5vh;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+  .select-container::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+  
+  .select-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #666 transparent transparent transparent;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+  
+  .select-container, select:focus {
+    outline: none;
+    border-color: #007bff; /* Example color */
+  }
+  
+
+/* Footer.js */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer__section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer__section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .footer__section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer__section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer__section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer__container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+
+/* profile.js */
+
+.mealPlan {
+    background-color: #a7c957d3;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.meal-plan-table {
+    width: 90%;
+    margin: 1px auto;
+    padding: 0 20px;
+  }
+  
+  .meal-plan-day {
+    margin-bottom: 30px;
+  }
+  
+  .meal-plan-day h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-plan-day table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .meal-plan-day th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .meal-plan-day td {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .meal-plan-day tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .meal-plan-day tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .profile-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  span {
+    font-size: 16px;
+  }
+  
+  .dosha-card {
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .dcardinner{
+    margin: .5rem;
+  }
+
+  .dosha-card p {
+    margin: .5rem;
+    text-align: justify;
+  }
+
+  .dosha-card h1{
+    font-size: 2rem;
+    margin: 20px;
+}
+  .dosha-card ul,h2 {
+    margin: .5rem;
+    list-style: disc;
+    text-align: justify;
+  }

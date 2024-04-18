@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import Loading from "../components/Loading";
+import Loading from "./Loading";
+import PredictAns from "./PredictAns";
 
 export default function Questions() {
   const [data, setData] = useState([]);
+  const authToken = localStorage.getItem('authToken');
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0); // Track current question index
   const [predicted, setPredicted] = useState(true);
@@ -12,7 +13,7 @@ export default function Questions() {
   const [isLoading, setIsLoading] = useState(false); // Track loading state
 
   const loadData = async () => {
-    let response = await fetch(global.url + "api/foodData", {
+    let response = await fetch(global.url + "api/questionData", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -54,7 +55,9 @@ export default function Questions() {
     try {
       const response = await fetch(global.url + "api/submitData", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",
+        'Authorization': `Bearer ${authToken}`
+      },
         body: JSON.stringify({
           qna_data: selectedAnswers,
         }),
@@ -78,7 +81,6 @@ export default function Questions() {
 
   return (
     <>
-      <Navbar />
       {isLoading ? ( // Display loading animation when isLoading is true
         <Loading/>
       ) : predicted ? (
@@ -91,11 +93,12 @@ export default function Questions() {
             }}
             key={currentIndex}
           >
-            <legend>Question {currentIndex + 1}</legend> {/* Display current question number */}
-            {Array.isArray(data) && data[currentIndex] ? (
+            {/* <legend>Question {currentIndex + 1}</legend> Display current question number */}
+            {Array.isArray(data) && data[currentIndex] ? (<>
+              <legend><b>{data[currentIndex].question}</b></legend> 
               <div className="qcard">
                 <div>
-                  <b>{data[currentIndex].question}</b>
+                  {/* <b>{data[currentIndex].question}</b> */}
                 </div>
                 <div className="container qOpts">
                   {data[currentIndex].options.map((optionObj, optionIndex) => {
@@ -117,7 +120,7 @@ export default function Questions() {
                   })}
                 </div>
               </div>
-            ) : (
+              </>) : (
               <div>No questions found</div>
             )}
             <button type="submit">
@@ -126,20 +129,7 @@ export default function Questions() {
           </form>
         </div>
       ) : (
-        <div className="">
-          <div className="doshaAns container">
-            <h1>Your predicted dosha is </h1>
-            <h1 style={{ color: "red" }}>
-              {predictionResponse["predicted_label"] === "0"
-                ? " Vata"
-                : predictionResponse["predicted_label"] === "1"
-                ? " Kapha"
-                : predictionResponse["predicted_label"] === "2"
-                ? " Pitta"
-                : ""}
-            </h1>
-          </div>
-        </div>
+          <PredictAns predictionResponse={predictionResponse} />
       )}
     </>
   );

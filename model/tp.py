@@ -6,9 +6,23 @@ import joblib
 app = Flask(__name__)
 
 # Sample ML model function for demonstration
+# def predict(data):
+#     clf = joblib.load('decision_tree_model.joblib')
+#     new_data = pd.read_csv('test.csv')
+#     question_data = new_data.copy()
+#     question_data.iloc[-1] = data
+#     question_with_dummies = pd.get_dummies(data=question_data)
+#     prediction_data = question_with_dummies.iloc[[0, -1]]
+#     y_pred = clf.predict(prediction_data)
+#     print(y_pred)
+#     string = str(y_pred[1])
+#     return {'predicted_label': string}
+
 def predict(data):
     clf = joblib.load('decision_tree_model.joblib')
     new_data = pd.read_csv('test.csv')
+    store_data = pd.read_csv('store.csv')
+    store_data.iloc[-1] = data
     question_data = new_data.copy()
     question_data.iloc[-1] = data
     question_with_dummies = pd.get_dummies(data=question_data)
@@ -16,13 +30,11 @@ def predict(data):
     y_pred = clf.predict(prediction_data)
     print(y_pred)
     string = str(y_pred[1])
-
-    with open('store.csv', 'a') as f:
-        int_data = [int(value) for value in data]
-        f.write(','.join(map(str, int_data)) + ',' + string + '\n')
-
+    store_data.iloc[-1, -1] = string
     return {'predicted_label': string}
 
+data = [1,3,1,1,1,1,1,1,5,3,2,3,2,2,2,2,3,2,3,3,1,2,2,1,1,1,1,1]
+predict(data)
 
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():
@@ -33,3 +45,4 @@ def predict_endpoint():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    

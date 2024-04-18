@@ -73,4 +73,31 @@
         background-position:top;
     }
 
+    .questions h1 {
+        font-size: x-large;
+    }
+
+    /* login.js */ 
+    .login {
+        width: 80vw;
+        padding: 1rem;
+    }
+    .select-container {
+        width: 40vw;
+    }
+
+    .dosha-card {
+        flex-direction: column;
+    }
+
+    .dosha-card p {
+        margin: 10px;
+    }
+
+    .dosha-card h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px;
+    }
+
 }
