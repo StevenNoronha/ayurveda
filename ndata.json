@@ -1,4 +1,4 @@
-const doshaData = [
+[
     {
         "question_no": "1",
         "question": "Status of Appetite",
@@ -269,6 +269,4 @@ const doshaData = [
             { "c": "Deep, pleasant, resonant voice which is melodious, resonating, but lower in pitch and intensity" }
         ]
     }
-];
-
-module.exports = doshaData;
+]

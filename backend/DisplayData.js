@@ -86,6 +86,7 @@ async function sendDataToFlask(qna_data) {
 router.post('/submitData', async (req, res) => {
     try {
         let qna_data = req.body.qna_data;
+        console.log(qna_data)
         const authToken = req.headers['authorization'];
         const token = authToken && authToken.split(' ')[1];
         

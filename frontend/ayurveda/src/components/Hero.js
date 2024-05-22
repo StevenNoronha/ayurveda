@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='container hero'>
       <div className='hero-text container example'>
-        <h1 className='example'>Ayuverda Dosha Assessment</h1>
+        <h1 className='example'>Ayuverda Prakriti Assessment</h1>
         <hr/>
         <p>Respond to the following inquiries to ascertain any potential imbalances in your doshas, ascertaining a holistic understanding of your well-being</p>
         <Link to='/predict'><button>Take the Assessment</button></Link>

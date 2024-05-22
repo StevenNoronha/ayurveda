@@ -1,10 +1,7 @@
-bodyHair_Color,eye_Color,eye_Size,hair_Growth,hair_Type,nails_color,palms_Color,scalpHair_Color,skin_Color,skin_Nature,teeth_Color,appetite_Amount,bowel_Freq,bowel_Tendency,digestive_Amount,sleep_Amount,sleep_Quality,stool_Consistency,walking_Amount,Anger_Quality,makingFriends_speed,retainingFriends_quality,hair_feel,skin_cracked,skin_freckle,skin_mark,skin_pimple,skin_wrinkled
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-3,3,3,3,,3,3,3,3,3,3,3,4,3,3,3,3,3,3,3,3,3,3,,,,,
-4,4,,0,,,4,4,4,4,,4,0,0,4,,0,0,,0,4,0,,,,,,
-,,,,,,,0,5,,,,,,,,,,,,,,,,,,,
-,,,,,,,,0,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-1,3,1,1,1,1,1,1,5,3,2,3,2,2,2,2,3,2,3,3,1,2,2,1,1,1,1,1
+status_of_appetite,dietary,bowel_habits,sleeping_pattern,dreams,working,activity_performance,talking,walking,associated_movements,nature_of_thrist,perspiration,climate_prefernce,memory_status,leadership_quality,decision_making_capacity,attitude_towards_problems,taste_liking,body_frame,body_weight,nature/texture_skin,complexion,body_hair,forehead,eyes,teeth,blood_vessels,scalp_hair,joints,voice
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+a,c,c,c,c,a,c,c,c,c,c,a,c,b,a,c,a,b,a,b,a,c,a,c,a,b,b,c,a,a

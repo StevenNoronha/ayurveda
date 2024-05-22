@@ -1,10 +1,8 @@
 bodyHair_Color,eye_Color,eye_Size,hair_Growth,hair_Type,nails_color,palms_Color,scalpHair_Color,skin_Color,skin_Nature,teeth_Color,appetite_Amount,bowel_Freq,bowel_Tendency,digestive_Amount,sleep_Amount,sleep_Quality,stool_Consistency,walking_Amount,Anger_Quality,makingFriends_speed,retainingFriends_quality,hair_feel,skin_cracked,skin_freckle,skin_mark,skin_pimple,skin_wrinkled,class
-1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2
-1,2,2,3,2,2,3,1,1,4,3,2,2,3,4,1,3,4,1,3,1,3,1,2,1,2,1,2,2
-1,4,2,1,2,2,1,4,3,1,3,2,4,1,2,3,1,3,1,2,3,2,3,1,2,1,2,1,2
-2,4,1,3,1,2,4,3,5,2,3,2,2,3,2,3,3,2,1,3,4,3,3,2,1,2,2,1,1
-2,3,1,2,2,1,3,4,3,2,2,2,2,2,2,1,2,3,3,2,3,3,2,2,1,2,1,2,1
-1,2,2,2,1,2,2,3,3,2,2,2,2,2,2,2,2,2,4,3,3,2,2,1,2,2,2,2,1
-1,3,2,3,2,2,3,4,6,4,3,3,2,4,3,3,3,4,3,3,4,3,2,1,2,1,2,1,1
-2,2,2,1,2,2,2,2,3,2,1,2,2,2,2,3,2,3,3,3,1,3,3,1,2,1,2,1,2
-3,2,2,1,1,2,2,3,5,4,1,2,1,2,1,1,3,2,1,2,1,2,1,2,2,2,2,2,0
+
+b,c,b,b,a,b,a,b,c,b,c,b,c,b,a,b,c,b,a,b,c,b,a,b,c,a,b,c,b,a,2
+a,a,c,a,b,b,c,b,b,c,a,b,b,c,b,b,b,b,b,a,a,b,b,b,b,a,b,b,b,b,1
+b,b,a,b,a,c,c,c,c,c,c,a,c,b,a,c,c,c,c,c,c,a,c,a,c,c,c,c,c,c,1
+a,a,b,a,b,b,b,b,b,a,a,b,b,c,b,b,b,b,b,a,a,b,b,b,b,a,b,b,b,b,2
+c,a,b,c,b,a,a,a,a,b,b,a,b,a,c,a,a,a,a,b,b,c,a,c,b,b,a,b,a,a,0
+b,c,a,b,a,b,b,c,c,b,b,b,a,b,b,b,c,c,c,c,c,b,a,c,c,c,b,c,c,c,2

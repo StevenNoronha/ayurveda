@@ -4,7 +4,7 @@ const app = express()
 const port = 5001
 const mongoDB = require('./db')
 
-app.use(cors({origin: ['http://localhost:3000', 'http://192.168.163.251:3000']}));
+app.use(cors({origin: ['http://localhost:3000', 'http://192.168.9.251:3000']}));
 
 mongoDB();
 

@@ -18,7 +18,7 @@ def predict(data):
     string = str(y_pred[1])
 
     with open('store.csv', 'a') as f:
-        int_data = [int(value) for value in data]
+        int_data = [str(value) for value in data]
         f.write(','.join(map(str, int_data)) + ',' + string + '\n')
 
     return {'predicted_label': string}
@@ -27,7 +27,7 @@ def predict(data):
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():
     data = request.json  # Assuming data is sent in JSON format
-    vals = [float(value) for value in data.values()]
+    vals = [str(value) for value in data.values()]
     prediction = predict(vals)  # Make predictions using the model
     return jsonify(prediction)
 

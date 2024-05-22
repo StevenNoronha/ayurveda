@@ -30,7 +30,7 @@ function UserDosha() {
                     <div className='container dosha-card'>
                         <img src={kapha} width={275} className="dosha-logo" alt='dosha-logo' />
                         <div className='dcardinner'>
-                        <p><h1>Your Dosha is Kapha: </h1>The Vata dosha regulates bodily movement, including muscles, tissues, and cell mobility, along with blood and lymphatic fluid circulation. It also manages the nervous system, facilitating brain-body communication pathways. Vata serves as the vital force mediating information flow between the brain and body parts.</p>
+                        <p><h1>Your Dosha is Kapha: </h1>The Kapha dosha regulates bodily movement, including muscles, tissues, and cell mobility, along with blood and lymphatic fluid circulation. It also manages the nervous system, facilitating brain-body communication pathways. Kapha serves as the vital force mediating information flow between the brain and body parts.</p>
                         <h2>Points to Follow: </h2>
                         <ul>
                         <li>Opt for a diet that is light, warm, and spicy to counteract Kapha's heaviness.</li>
@@ -72,7 +72,7 @@ function UserDosha() {
                     <div className='container dosha-card'>
                         <img src={vata} width={275} className="dosha-logo" alt='dosha-logo' />
                         <div className='dcardinner'>
-                        <p><h2>Your Dosha is Vata: </h2>The Kapha dosha directs bodily structure and lubrication, influencing bone, muscle, and tissue strength, skin hydration, and joint lubrication.  In Ayurveda, Kapha is recognized as pivotal in fortifying the body's innate defense mechanisms against illnesses and maintaining well-being.</p>
+                        <p><h2>Your Dosha is Vata: </h2>The Vata dosha directs bodily structure and lubrication, influencing bone, muscle, and tissue strength, skin hydration, and joint lubrication.  In Ayurveda, Vata is recognized as pivotal in fortifying the body's innate defense mechanisms against illnesses and maintaining well-being.</p>
                         <h2>Points to Follow: </h2>
                         <ul>
                             <li>Prioritize warm, nourishing, and grounding foods to pacify Vata's tendency towards dryness and instability.</li>
